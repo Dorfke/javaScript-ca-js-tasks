@@ -87,15 +87,15 @@ console.log();
 console.group("6. Sukurkite funkciją, kuri grąžina simbolių darinio raidžių skaičių");
 {
   function getDoubleLetterCount(str) {
-    
+    return str.length;
   }
-  // console.log('---');
-  // console.log({
-  //   'labas': getDoubleLetterCount('labas'),
-  //   'kranas': getDoubleLetterCount('kranas'),
-  //   'kebabas': getDoubleLetterCount('kebabas'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'labas': getDoubleLetterCount('labas'),
+     'kranas': getDoubleLetterCount('kranas'),
+     'kebabas': getDoubleLetterCount('kebabas'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -103,15 +103,15 @@ console.log();
 console.group("7. Sukurkite funkciją, kuri grąžina simbolių darinio raidžių skaičių padaugintą iš dviejų");
 {
   function getDoubleLetterCount(str) {
-    // code ...
+    return str.length * 2;
   }
-  // console.log('---');
-  // console.log({
-  //   'labas': getDoubleLetterCount('labas'),
-  //   'kranas': getDoubleLetterCount('kranas'),
-  //   'kebabas': getDoubleLetterCount('kebabas'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'labas': getDoubleLetterCount('labas'),
+     'kranas': getDoubleLetterCount('kranas'),
+     'kebabas': getDoubleLetterCount('kebabas'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -119,15 +119,15 @@ console.log();
 console.group("8. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro bendrą simbolių skaičių");
 {
   function getArgsLetterSum(a, b) {
-    // code ...
+    return a.length + b.length;
   }
-  // console.log('---');
-  // console.log({
-  //   'labas, abc': getArgsLetterSum('labas', 'abc'),
-  //   'kranas, jonas': getArgsLetterSum('kranas', 'jonas'),
-  //   'kebabas, kefyras': getArgsLetterSum('kebabas', 'kefyras'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'labas, abc': getArgsLetterSum('labas', 'abc'),
+     'kranas, jonas': getArgsLetterSum('kranas', 'jonas'),
+     'kebabas, kefyras': getArgsLetterSum('kebabas', 'kefyras'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -135,15 +135,15 @@ console.log();
 console.group("9. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra 'a' raidė, priešingu atveju <false>");
 {
   function containsLetterA(str) {
-    // code ...
+    return str.includes('a');
   }
-  // console.log('---');
-  // console.log({
-  //   'labas': containsLetterA('labas'),
-  //   'kempė': containsLetterA('kempė'),
-  //   'Finakolė': containsLetterA('Finakolė'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+    'labas': containsLetterA('labas'),
+     'kempė': containsLetterA('kempė'),
+     'Finakolė': containsLetterA('Finakolė'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -151,15 +151,15 @@ console.log();
 console.group("10. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra 2 parametru perduoda raidė, priešingu atveju false");
 {
   function containsLetter(str, letter) {
-    // code ...
+    return str.includes(letter);
   }
-  // console.log('---');
-  // console.log({
-  //   'labas, a': containsLetter('labas', 'a'),
-  //   'kempė, a': containsLetter('kempė', 'a'),
-  //   'Finakolė, u': containsLetter('Finakolė', 'u'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'labas, a': containsLetter('labas', 'a'),
+     'kempė, a': containsLetter('kempė', 'a'),
+     'Finakolė, u': containsLetter('Finakolė', 'u'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
