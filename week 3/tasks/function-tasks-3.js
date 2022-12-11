@@ -167,15 +167,15 @@ console.log();
 console.group("11. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra lyginis skaičius simbolių");
 {
   function isEvenNumberOfLetters(str) {
-    // code ...
+    return str.length % 2 === 0;
   }
-  // console.log('---');
-  // console.log({
-  //   'labas': isEvenNumberOfLetters('labas'),
-  //   'kempės': isEvenNumberOfLetters('kempės'),
-  //   '123123': isEvenNumberOfLetters('123123'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'labas': isEvenNumberOfLetters('labas'),
+     'kempės': isEvenNumberOfLetters('kempės'),
+     '123123': isEvenNumberOfLetters('123123'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -183,15 +183,15 @@ console.log();
 console.group("12. Sukurkite funkciją, kuri grąžina balsių kiekį žodyje");
 {
   function getNumberOfVowels(str) {
-    // code ...
+    return str.match(/[aąeęėiįyouųū]/gi).length;
   }
-  // console.log('---');
-  // console.log({
-  //   'aaaaa': getNumberOfVowels('aaaaa'),
-  //   'sasasasa': getNumberOfVowels('sasasasa'),
-  //   'aeyuioąčė': getNumberOfVowels('aeyuioąčė'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'aaaaa': getNumberOfVowels('aaaaa'),
+     'sasasasa': getNumberOfVowels('sasasasa'),
+     'aeyuioąčė': getNumberOfVowels('aeyuioąčė'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -199,15 +199,17 @@ console.log();
 console.group("13. Sukurkite funkciją, kuri grąžina priebalsių kiekį žodyje");
 {
   function getNumberOfConsonants(str) {
-    // code ...
+    const result = str.match(/[bcčdfghjklmnprsštvzž]/gi) ?? [];
+
+        return result.length;
   }
-  // console.log('---');
-  // console.log({
-  //   'aaaaa': getNumberOfConsonants('aaaaa'),
-  //   'sasasasa': getNumberOfConsonants('sasasasa'),
-  //   'aeyuioąčė': getNumberOfConsonants('aeyuioąčė'),
-  // })
-  // console.log('---');
+   console.log('---');
+   console.log({
+     'aaaaa': getNumberOfConsonants('aaaaa'),
+     'sasasasa': getNumberOfConsonants('sasasasa'),
+     'aeyuioąčė': getNumberOfConsonants('aeyuioąčė'),
+   })
+   console.log('---');
 }
 console.groupEnd();
 console.log();
@@ -215,7 +217,9 @@ console.log();
 console.group("14. Sukurkite funkciją, kuri grąžina <true>, jeigu NĖRA skaičių");
 {
   function isOnlyLetters(str) {
-    // ... code
+    const result = str.match(/[0123456789]/gi) ?? [];
+
+    return result.length > 0;
   }
 
   console.log('---');
@@ -232,7 +236,9 @@ console.log();
 console.group("15. Sukurkite funkciją, kuri grąžina 'a' raidžių kiekį žodyje");
 {
   function letterACount(str) {
-    // code ...
+    const result = str.match(/a/gi) ?? [];
+
+    return result.length;
   }
   // console.log('---');
   // console.log({
